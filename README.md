@@ -88,6 +88,8 @@ Type "help()" for more information.
 >>>
 ```
 
+To exit the picocom connection to the REPL do `Ctrl-a` then `Ctrl-x`
+
 ### 6. Copying files to ESP32:
 
 I am using ampy, from adafruit (https://github.com/scientifichackers/ampy):
@@ -96,7 +98,20 @@ I am using ampy, from adafruit (https://github.com/scientifichackers/ampy):
 pip install adafruit-ampy
 ```
 
+To list files:
+```
+ampy -p /dev/tty.usbserial-0001 ls
+```
 
+To get file contents:
+```
+
+```
+
+To put a file in ESP32 (DANGER - it overwrites):
+```
+
+```
 
 ### 7. Configuring network:
 ```
