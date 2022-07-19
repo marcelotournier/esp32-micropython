@@ -87,3 +87,37 @@ EK:?MicroPython v1.19.1 on 2022-06-18; ESP32 module with ESP32
 Type "help()" for more information.
 >>>
 ```
+
+### 6. Configuring network:
+```
+import network
+
+# Checking which mode it is - access point or client mode:
+sta_if = network.WLAN(network.STA_IF)
+ap_if = network.WLAN(network.AP_IF)
+
+# station interface?
+sta_if.active()
+# False
+
+# access point interface?
+ap_if.active()
+# True
+```
+
+Connecting as AP interface:
+```
+SSID = "Micropython-ESP32"
+PASS = "123123"
+ap = network.WLAN(network.AP_IF)
+ap.active(True)
+ap.config(essid=SSID, password=PASS)
+```
+
+WebREPL
+
+This is a nice way to interact with the ESP32. To setup, run in the micropython shell:
+```
+import webrepl_setup
+```
+and follow the instructions. The first option should be `E` to enable it. Set the password and then accept rebooting.
