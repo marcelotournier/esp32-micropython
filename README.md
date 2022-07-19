@@ -88,7 +88,17 @@ Type "help()" for more information.
 >>>
 ```
 
-### 6. Configuring network:
+### 6. Copying files to ESP32:
+
+I am using ampy, from adafruit (https://github.com/scientifichackers/ampy):
+```
+# ref: https://boneskull.com/micropython-on-esp32-part-1/
+pip install adafruit-ampy
+```
+
+
+
+### 7. Configuring network:
 ```
 import network
 
@@ -121,3 +131,6 @@ This is a nice way to interact with the ESP32. To setup, run in the micropython 
 import webrepl_setup
 ```
 and follow the instructions. The first option should be `E` to enable it. Set the password and then accept rebooting.
+
+
+
