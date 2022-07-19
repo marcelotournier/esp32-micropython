@@ -41,3 +41,16 @@ Go to where you downloaded the firmware file and run:
 ```
 esptool.py --chip esp32 --port /dev/tty.usbserial-0001 --baud 460800 write_flash -z 0x1000 esp32-20220618-v1.19.1.bin
 ```
+
+### 5. Accessing the Micropython REPL
+You must get it through the usb port using `picocom`. This command should exist in linux (based on what the docs said). For mac, install it
+with homebrew (https://brew.sh/)
+```
+brew install picocom
+```
+
+and then run in your port:
+```
+picocom /dev/tty.usbserial-0001 -b115200
+```
+
