@@ -1,6 +1,9 @@
 """
 This file is executed on every boot
 (including wake-boot from deepsleep)
+
+RENAME THIS TO boot.py BEFORE LOADING IT IN
+THE MICRO CONTROLLER!
 """
 import esp
 import webrepl
