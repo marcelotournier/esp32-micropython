@@ -54,3 +54,36 @@ and then run in your port:
 picocom /dev/tty.usbserial-0001 -b115200
 ```
 
+Then... Bingo! You just hacked your first ESP32! :)
+```
+$ picocom /dev/tty.usbserial-0001 -b115200
+picocom v3.1
+
+port is        : /dev/tty.usbserial-0001
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+stopbits are   : 1
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+hangup is      : no
+nolock is      : no
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv -E
+imap is        : 
+omap is        : 
+emap is        : crcrlf,delbs,
+logfile is     : none
+initstring     : none
+exit_after is  : not set
+exit is        : no
+
+Type [C-a] [C-h] to see available commands
+Terminal ready
+EK:?MicroPython v1.19.1 on 2022-06-18; ESP32 module with ESP32
+Type "help()" for more information.
+>>>
+```
