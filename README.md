@@ -141,7 +141,7 @@ ap.config(essid=SSID, password=PASS)
 
 WebREPL
 
-This is a nice way to interact with the ESP32. To setup, run in the micropython shell:
+This is a nice way to interact with the ESP32. To setup, first install nodejs in your machine, then run in the micropython shell:
 ```
 import webrepl_setup
 ```
