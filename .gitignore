@@ -1,3 +1,7 @@
+# micropython binaries:
+**/micropython_roms/
+*.bin
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
